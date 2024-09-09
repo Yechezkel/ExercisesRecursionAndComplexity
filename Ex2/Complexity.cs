@@ -263,14 +263,23 @@ namespace Ex2
         //O(n)
         public static int FindMissingNumberUnsoerted(int[] array)
         {
-            bool[] temp = new bool[array.Length + 2];
+            int sum = 0;
+            int n = array.Length + 1;
             for (int i = 0; i < array.Length; i++)
-                temp[array[i]] = true;
-            for (int i = 1; i < temp.Length; i++)
-                if (!temp[i])
-                    return i;
-            return -1;
+                sum += array[i];
+            int formula = ((n + 1) * n) / 2;
+            return formula - sum; 
         }
+        //public static int FindMissingNumberUnsoerted(int[] array)
+        //{
+        //    bool[] temp = new bool[array.Length + 2];
+        //    for (int i = 0; i < array.Length; i++)
+        //        temp[array[i]] = true;
+        //    for (int i = 1; i < temp.Length; i++)
+        //        if (!temp[i])
+        //            return i;
+        //    return -1;
+        //}
 
-    }       
+    }
 }

@@ -7,8 +7,8 @@
 
             int[] arr = { 1};
             Console.WriteLine(Complexity.FindMissingNumber(arr));
-            int[] arr1 = {1,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 15, 16, 17 };
-            Console.WriteLine(Complexity.FindMissingNumber(arr1));
+            int[] arr1 = {1,2,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,14, 16, 17 };
+            Console.WriteLine(Complexity.FindMissingNumberUnsoerted(arr1));
 
 
 
